@@ -12,11 +12,13 @@ class Solution {
             System.out.println(result);
             return;
         }
-        helper(nums,result,ds,i+1);
+        
         ds.add(nums[i]);
+        
 
         helper(nums,result,ds,i+1);
         ds.remove(ds.size()-1);
+        helper(nums,result,ds,i+1);
         
     }
 }
