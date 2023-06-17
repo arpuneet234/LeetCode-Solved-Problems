@@ -13,10 +13,7 @@ class Solution {
             else {
                 map[pos][2]=true;
                 
-            }
-            
-            
-            
+            } 
         }
         int ans=0;
         
